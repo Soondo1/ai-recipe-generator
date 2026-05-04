@@ -10,7 +10,7 @@ export const auth = defineAuth({
       verificationEmailStyle: "CODE",
       verificationEmailSubject: "Welcome to the AI-Powered Recipe Generator!",
       verificationEmailBody: (createCode) =>
-        `Use this code to confirm your account: ${createCode}`,
+        `Use this code to confirm your account: ${createCode()}`,
     },
   },
 });
